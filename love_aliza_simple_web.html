@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You Aliza</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2c3e50;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 3rem 4rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 90vw;
+        }
+
+        .message {
+            font-size: 3.5rem;
+            font-weight: 300;
+            color: #e74c3c;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            animation: fadeIn 2s ease-out 0.5s both;
+        }
+
+        .heart {
+            font-size: 2rem;
+            color: #e74c3c;
+            animation: gentlePulse 3s ease-in-out infinite;
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes gentlePulse {
+            0%, 100% { 
+                transform: scale(1);
+            }
+            50% { 
+                transform: scale(1.1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem;
+                margin: 1rem;
+            }
+            
+            .message {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="message">I love you Aliza</h1>
+        <p class="subtitle">Forever and always</p>
+        
+        <div>
+            <span class="heart">💕</span>
+            <span class="heart">💖</span>
+            <span class="heart">💕</span>
+        </div>
+    </div>
+</body>
+</html>
